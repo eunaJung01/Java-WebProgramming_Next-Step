@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter02.SplitterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-13T10:07:28" hostname="jeong-eun-aui-MacBookPro.local" time="0.099">
+<testsuite name="chapter02.SplitterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-13T11:30:21" hostname="jeong-eun-aui-MacBookPro.local" time="0.096">
   <properties/>
-  <testcase name="문자분리_기본구분자_콜론()" classname="chapter02.SplitterTest" time="0.095"/>
-  <testcase name="문자분리_기본구분자_콤마()" classname="chapter02.SplitterTest" time="0.002"/>
+  <testcase name="문자분리_기본구분자_콜론()" classname="chapter02.SplitterTest" time="0.089"/>
+  <testcase name="문자분리_기본구분자_콤마()" classname="chapter02.SplitterTest" time="0.001"/>
+  <testcase name="문자_분리_커스텀_구분자()" classname="chapter02.SplitterTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
