@@ -1,5 +1,6 @@
 package chapter02;
 
+import chapter02.string_calculator.Calculator;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
