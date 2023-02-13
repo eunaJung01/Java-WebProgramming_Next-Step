@@ -29,4 +29,10 @@ public class ConverterTest {
                 .isInstanceOf(RuntimeException.class);
     }
 
+    @Test
+    void 문자열배열을_숫자배열로_변환_공백_테스트() {
+        assertThat(converter.convert(Arrays.asList("", "1"))).isEqualTo(Arrays.asList(0, 1));
+    }
+
+
 }

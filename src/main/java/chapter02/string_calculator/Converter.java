@@ -19,6 +19,10 @@ public class Converter {
     }
 
     private void addNumber(String numberString) {
+        if (numberString.equals("")) {
+            numbers.add(0);
+            return;
+        }
         if (!isIllegalNumber(numberString)) {
             numbers.add(Integer.parseInt(numberString));
         }
