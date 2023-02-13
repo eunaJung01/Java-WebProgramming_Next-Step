@@ -27,7 +27,7 @@ public class SplitterTest {
     }
 
     @Test
-    void 문자_분리_커스텀_구분자() {
+    void 문자분리_커스텀구분자() {
         input = "//;\n1;2";
         Assertions.assertThat(splitter.splitInput(input)).isEqualTo(new String[]{"1", "2"});
     }
