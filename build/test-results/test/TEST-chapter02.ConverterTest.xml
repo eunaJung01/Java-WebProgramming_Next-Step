@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter02.ConverterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-13T17:05:40" hostname="jeong-eun-aui-MacBookPro.local" time="0.094">
+  <properties/>
+  <testcase name="문자열배열을_숫자배열로_변환()" classname="chapter02.ConverterTest" time="0.076"/>
+  <testcase name="문자열배열을_숫자배열로_변환_에러_숫자X()" classname="chapter02.ConverterTest" time="0.007"/>
+  <testcase name="문자열배열을_숫자배열로_변환_에러_음수()" classname="chapter02.ConverterTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

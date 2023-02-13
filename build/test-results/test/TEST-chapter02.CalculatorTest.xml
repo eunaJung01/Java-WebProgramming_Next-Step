@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter02.CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-13T11:41:34" hostname="jeong-eun-aui-MacBookPro.local" time="0.07">
+<testsuite name="chapter02.CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-13T17:05:40" hostname="jeong-eun-aui-MacBookPro.local" time="0.005">
   <properties/>
-  <testcase name="더하기()" classname="chapter02.CalculatorTest" time="0.07"/>
+  <testcase name="더하기()" classname="chapter02.CalculatorTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
