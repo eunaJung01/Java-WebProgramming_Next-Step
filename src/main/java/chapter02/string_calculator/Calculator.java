@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Calculator {
 
-    public int add(List<Integer> numbers) {
+    public static int add(List<Integer> numbers) {
         return numbers.stream().mapToInt(i -> i).sum();
     }
 

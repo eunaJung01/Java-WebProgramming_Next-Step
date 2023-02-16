@@ -6,19 +6,17 @@ import java.util.regex.Pattern;
 
 public class Converter {
 
-    final String nonNumber_regex = "[^0-9]";
+    final static String nonNumber_regex = "[^0-9]";
 
-    List<Integer> numbers;
-
-    public List<Integer> convert(List<String> numberStrings) {
-        numbers = new ArrayList<>();
+    public static List<Integer> convert(List<String> numberStrings) {
+        List<Integer> numbers = new ArrayList<>();
         for (String numberString : numberStrings) {
-            addNumber(numberString);
+            addNumber(numbers, numberString);
         }
         return numbers;
     }
 
-    private void addNumber(String numberString) {
+    private static void addNumber(List<Integer> numbers, String numberString) {
         if (numberString.equals("")) {
             numbers.add(0);
             return;
@@ -28,7 +26,7 @@ public class Converter {
         }
     }
 
-    private boolean isIllegalNumber(String numberString) {
+    private static boolean isIllegalNumber(String numberString) {
         if (numberString.contains("-") || Pattern.compile(nonNumber_regex).matcher(numberString).find()) {
             throw new RuntimeException();
         }
