@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter02.ConverterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-16T16:32:09" hostname="jeong-eun-aui-MacBookPro.local" time="0.024">
+<testsuite name="chapter02.ConverterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-16T17:08:13" hostname="jeong-eun-aui-MacBookPro.local" time="0.106">
   <properties/>
-  <testcase name="문자열배열을_숫자배열로_변환()" classname="chapter02.ConverterTest" time="0.002"/>
-  <testcase name="문자열배열을_숫자배열로_변환_공백_테스트()" classname="chapter02.ConverterTest" time="0.002"/>
-  <testcase name="문자열배열을_숫자배열로_변환_에러_숫자X()" classname="chapter02.ConverterTest" time="0.009"/>
-  <testcase name="문자열배열을_숫자배열로_변환_에러_음수()" classname="chapter02.ConverterTest" time="0.005"/>
+  <testcase name="문자열배열을_숫자배열로_변환()" classname="chapter02.ConverterTest" time="0.084"/>
+  <testcase name="문자열배열을_숫자배열로_변환_공백_테스트()" classname="chapter02.ConverterTest" time="0.001"/>
+  <testcase name="문자열배열을_숫자배열로_변환_에러_숫자X()" classname="chapter02.ConverterTest" time="0.012"/>
+  <testcase name="문자열배열을_숫자배열로_변환_에러_음수()" classname="chapter02.ConverterTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
