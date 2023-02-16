@@ -1,6 +1,6 @@
 package chapter02;
 
-import chapter02.string_calculator.Splitter;
+import chapter02.string_calculator.util.Splitter;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 

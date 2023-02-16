@@ -1,4 +1,4 @@
-package chapter02.string_calculator;
+package chapter02.string_calculator.util;
 
 import java.util.List;
 

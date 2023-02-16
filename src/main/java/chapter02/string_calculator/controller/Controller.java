@@ -1,5 +1,8 @@
-package chapter02.string_calculator;
+package chapter02.string_calculator.controller;
 
+import chapter02.string_calculator.util.Calculator;
+import chapter02.string_calculator.util.Converter;
+import chapter02.string_calculator.util.Splitter;
 import chapter02.string_calculator.view.InputView;
 import chapter02.string_calculator.view.OutputView;
 

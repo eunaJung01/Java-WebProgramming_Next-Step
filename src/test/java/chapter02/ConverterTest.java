@@ -1,6 +1,6 @@
 package chapter02;
 
-import chapter02.string_calculator.Converter;
+import chapter02.string_calculator.util.Converter;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
