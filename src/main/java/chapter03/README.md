@@ -17,14 +17,20 @@
 ### 요구사항 1 - http://localhost:8080/index.html로 접속 시 응답
 
 1. BufferedReader를 통해 HTTP Header 읽기
-2. HTTP Header 첫 번째 라인에서 요청 URL을 추출
+2. HTTP 요청 첫 번째 라인에서 요청 URL을 추출
 3. 요청 URL에 해당하는 파일을 webapp 디렉터리에서 읽어 전달
 
 <br/>
 
-### 요구사항 2 - get 방식으로 회원가입
+### 요구사항 2 - GET 방식으로 회원가입
 
-*
+* '회원가입' 메뉴 클릭 시 http://localhost:8080/user/form.html으로 이동한다.
+* 회원가입을 하면 다음과 같은 형태로 사용자가 입력한 값이 서버에 전달된다.  
+  /user/create?userId=javajigi&password=password&name=JaeSung&email=javajigi%40slipp.net
+
+1. HTTP 요청 첫 번째 라인에서 요청 URL을 추출
+2. 요청 URL에서 접근 경로와 `이름=값`으로 전달되는 데이터(Query String)를 추출
+3. User 클래스에 정보 저장
 
 <br/>
 

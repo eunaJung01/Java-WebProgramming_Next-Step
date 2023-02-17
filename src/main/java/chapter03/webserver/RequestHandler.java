@@ -1,5 +1,7 @@
 package chapter03.webserver;
 
+import chapter03.model.User;
+import chapter03.util.HttpRequestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -7,6 +9,7 @@ import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.Map;
 
 public class RequestHandler extends Thread {
 
@@ -27,8 +30,13 @@ public class RequestHandler extends Thread {
             String line = bufferedReader.readLine();
             logger.debug("request line : {}", line);
 
-            if (line == null) {
-                return;
+            if (line == null) return;
+            String[] requestLine = line.split("' '|\\?");
+            String httpMethod = requestLine[0];
+            String url = requestLine[1];
+            String params = "";
+            if (requestLine.length >= 3) {
+                params = requestLine[2];
             }
 
             // TODO: Request header 전체 출력
@@ -40,13 +48,7 @@ public class RequestHandler extends Thread {
             //*/
 
             // TODO: 사용자의 요청에 대한 처리
-            String url = line.split(" ")[1];
-            byte[] body;
-            if (url.equals("/index.html")) {
-                body = Files.readAllBytes(new File("./webapp" + url).toPath());
-            } else {
-                body = "Hello World".getBytes();
-            }
+            byte[] body = setBody(httpMethod, url, params);
 
             // TODO: 응답에 대한 처리
             DataOutputStream dos = new DataOutputStream(out);
@@ -56,6 +58,18 @@ public class RequestHandler extends Thread {
         } catch (IOException e) {
             logger.error(e.getMessage());
         }
+    }
+
+    private byte[] setBody(String httpMethod, String url, String params) throws IOException {
+        if (httpMethod.equals("GET") && url.equals("/index.html")) {
+            return Files.readAllBytes(new File("./webapp" + url).toPath());
+        }
+        if (httpMethod.equals("GET") && url.equals("/user/create")) {
+            Map<String, String> queryParams = HttpRequestUtils.parseQueryString(params);
+            User user = new User(queryParams.get("userId"), queryParams.get("password"), queryParams.get("name"), queryParams.get("email"));
+            logger.debug("User : {}", user);
+        }
+        return "Hello World".getBytes();
     }
 
     private void response200Header(DataOutputStream dos, int lengthOfBodyContent) {
