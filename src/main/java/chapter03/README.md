@@ -16,7 +16,9 @@
 
 ### 요구사항 1 - http://localhost:8080/index.html로 접속 시 응답
 
-*
+1. BufferedReader를 통해 HTTP Header 읽기
+2. HTTP Header 첫 번째 라인에서 요청 URL을 추출
+3. 요청 URL에 해당하는 파일을 webapp 디렉터리에서 읽어 전달
 
 <br/>
 
